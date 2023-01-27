@@ -1,4 +1,4 @@
-# Howabot
+# coala-ai-bot🐨
 
 **coala-ai-bot** is a slack bot which answers your questions by using openAI
 
