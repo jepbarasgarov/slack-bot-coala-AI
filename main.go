@@ -15,6 +15,10 @@ import (
 	"github.com/sirupsen/logrus"
 )
 
+const (
+	openAiApiUrl = "https://api.openai.com/v1/engines/text-davinci-002/completions"
+)
+
 func startBot() error {
 	bot := createBot()
 	def := createAIChatDefinitionToBot()
@@ -94,7 +98,6 @@ func createAIChatDefinitionToBot() (def *slacker.CommandDefinition) {
 }
 
 func generateRequestToOpenAI(qstn string) (*http.Request, error) {
-	url := "https://api.openai.com/v1/engines/text-davinci-002/completions"
 
 	// Prepare the request body to openAI
 	req := models.RequestModelToOpenAI
@@ -107,7 +110,7 @@ func generateRequestToOpenAI(qstn string) (*http.Request, error) {
 		return nil, errors.New("Couldn't generate message")
 	}
 
-	requestToOpenAI, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonString))
+	requestToOpenAI, err := http.NewRequest("POST", openAiApiUrl, bytes.NewBuffer(jsonString))
 	requestToOpenAI.Header.Set("Content-Type", "application/json")
 	requestToOpenAI.Header.Set("Authorization", "Bearer "+utils.Config.OpenApiKey)
 
