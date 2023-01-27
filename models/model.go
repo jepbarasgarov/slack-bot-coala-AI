@@ -3,7 +3,7 @@ package models
 type Configuration struct {
 	SlackBotToken string `json:"slack_bot_token"`
 	SlackAppToken string `json:"slack_app_token"`
-	OpenApiKey    string `json:"open_api_key"`
+	OpenAIApiKey  string `json:"open_ai_api_key"`
 }
 
 var RequestModelToOpenAI struct {

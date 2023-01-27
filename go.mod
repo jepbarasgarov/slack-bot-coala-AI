@@ -1,4 +1,4 @@
-module github.com/jepbarasgarov/slack-bot-AI
+module github.com/jepbarasgarov/slack-bot-coala-AI
 
 go 1.18
 

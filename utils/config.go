@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"io/ioutil"
 
-	"github.com/jepbarasgarov/slack-bot-AI/models"
+	"github.com/jepbarasgarov/slack-bot-coala-AI/models"
 
 	"github.com/sirupsen/logrus"
 )

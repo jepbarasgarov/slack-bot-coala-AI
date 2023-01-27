@@ -1,5 +1,5 @@
 {
   "slack_app_token": "xapp-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
   "slack_bot_token": "xoxb-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-  "open_api_key": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  "open_ai_api_key": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 }

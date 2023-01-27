@@ -8,8 +8,8 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/jepbarasgarov/slack-bot-AI/models"
-	"github.com/jepbarasgarov/slack-bot-AI/utils"
+	"github.com/jepbarasgarov/slack-bot-coala-AI/models"
+	"github.com/jepbarasgarov/slack-bot-coala-AI/utils"
 
 	"github.com/shomali11/slacker"
 	"github.com/sirupsen/logrus"
@@ -112,7 +112,7 @@ func generateRequestToOpenAI(qstn string) (*http.Request, error) {
 
 	requestToOpenAI, err := http.NewRequest("POST", openAiApiUrl, bytes.NewBuffer(jsonString))
 	requestToOpenAI.Header.Set("Content-Type", "application/json")
-	requestToOpenAI.Header.Set("Authorization", "Bearer "+utils.Config.OpenApiKey)
+	requestToOpenAI.Header.Set("Authorization", "Bearer "+utils.Config.OpenAIApiKey)
 
 	return requestToOpenAI, nil
 }
