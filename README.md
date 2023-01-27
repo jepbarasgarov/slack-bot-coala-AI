@@ -2,7 +2,7 @@
 
 **coala-ai-bot** is a slack bot which answers your questions by using openAI
 
-<img src="images/coala-ai-bot.png" height="220">
+<img src="images/Screenshot from 2023-01-27 19-23-18.png" height="220">
 
 ---
 
