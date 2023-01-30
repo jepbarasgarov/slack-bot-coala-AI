@@ -17,7 +17,7 @@ To create Slack bot we used a [Slacker](https://github.com/shomali11/slacker) fr
 - Select `Socket Mode` on the menu on the left and Enable Socket Mode. It will ask you to generate token, name token as you want and generate it.
 - Copy generated token and add it to `config.json` file as `"slack_app_token"`.
 - Go to `Event Subscribtions` on the menu and Enable Events. Then find `Subscribe to bot events` section and add common event subscribtions for bots `app_mention` and `message.im`. Click to `Save changes` button below.
-- Now, go to `OAuth & Permissons` and find `Scopes` section. Here you can add or remove scopes depending on bots purpose. For _coala-ai-bot_ add following scopes:basarjagma
+- Now, go to `OAuth & Permissons` and find `Scopes` section. Here you can add or remove scopes depending on bots purpose. For _coala-ai-bot_ add following scopes:
   - `app_mentions:read`
   - `channels:history`
   - `chat:write`
